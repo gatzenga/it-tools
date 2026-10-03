@@ -1,5 +1,6 @@
 # build stage
-FROM node:lts-alpine AS build-stage
+# The result is static files, so it is built once on the native platform for every target architecture
+FROM --platform=$BUILDPLATFORM node:lts-alpine AS build-stage
 # Set environment variables for non-interactive npm installs
 ENV NPM_CONFIG_LOGLEVEL warn
 ENV CI true
