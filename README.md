@@ -11,7 +11,7 @@ Personal fork of <a href="https://github.com/CorentinTh/it-tools">CorentinTh/it-
 ## Self host
 
 ```sh
-docker run -d --name it-tools --restart unless-stopped -p 8080:80 ghcr.io/gatzenga/it-tools:latest
+docker run -d --name it-tools --restart unless-stopped -p 8080:8080 ghcr.io/gatzenga/it-tools:latest
 ```
 
 The image is built for `linux/amd64` and `linux/arm64` on every push to `main`.
